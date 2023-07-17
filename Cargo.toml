@@ -1,0 +1,13 @@
+[package]
+name = "rust_tensorflow_serving_client_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tensorflow-serving-client = "2.3.0"
+tokio = { version = "1.29.1", features = ["macros", "rt-multi-thread"] }
+grpcio = "0.6"
+protobuf = "~2"
+linfa-datasets = { version = "0.6", features = ["iris"] }
